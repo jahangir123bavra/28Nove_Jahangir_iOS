@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="task6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hH4-7y-ti2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbc-TV-0Lo">
+                                <rect key="frame" x="95" y="528" width="185.5" height="38"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change Image">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="changact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAT-lT-me1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hH4-7y-ti2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4gV-BS-vJu"/>
+                            <constraint firstItem="hH4-7y-ti2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="712-uJ-IAe"/>
+                            <constraint firstItem="hH4-7y-ti2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7EJ-os-KyS"/>
+                            <constraint firstItem="hH4-7y-ti2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7nd-O2-Xas"/>
+                            <constraint firstItem="vbc-TV-0Lo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="AxH-85-VBV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vbc-TV-0Lo" secondAttribute="trailing" constant="94.5" id="Ea8-id-297"/>
+                            <constraint firstItem="vbc-TV-0Lo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="528" id="JBH-nQ-7jx"/>
+                            <constraint firstItem="hH4-7y-ti2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JyI-OV-C86"/>
+                            <constraint firstItem="hH4-7y-ti2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="U3U-bl-jkD"/>
+                            <constraint firstItem="vbc-TV-0Lo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="X1X-9U-JOz"/>
+                            <constraint firstItem="hH4-7y-ti2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dQX-wO-OPd"/>
+                            <constraint firstItem="vbc-TV-0Lo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="fHE-Pe-EIM"/>
+                            <constraint firstItem="hH4-7y-ti2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fPI-KP-FO5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vbc-TV-0Lo" secondAttribute="trailing" constant="94.5" id="gfQ-NC-i0o"/>
+                            <constraint firstItem="hH4-7y-ti2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kVt-WO-6no"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vbc-TV-0Lo" secondAttribute="trailing" constant="94.5" id="nmA-iI-QRe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="vbc-TV-0Lo" id="pbf-2d-Oay"/>
+                        <outlet property="imageview" destination="hH4-7y-ti2" id="PB8-EN-PU1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.200000000000003" y="-2.2488755622188905"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
