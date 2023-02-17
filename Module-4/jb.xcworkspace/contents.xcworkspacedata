@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:Task7/Task7.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/mr.jb/Desktop/Module-4/Task7/Task7.xcodeproj/bullet">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/mr.jb/Desktop/Module-4/Task7/Task7.xcodeproj/Fram">
+   </FileRef>
+</Workspace>
